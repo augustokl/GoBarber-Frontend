@@ -5,9 +5,12 @@ import './config/ReactotronConfig';
 import Routes from './routes';
 import history from './services/history';
 
+import GlobalSytle from './styles/global';
+
 function App() {
   return (
     <Router history={history}>
+      <GlobalSytle />
       <Routes />
     </Router>
   );
